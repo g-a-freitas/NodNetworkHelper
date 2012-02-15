@@ -8,7 +8,7 @@
 	using System.Threading;
 	using System.Xml.Serialization;
 
-	public class NetworkConfigurationController
+	public class NetworkConfigurationController : IDisposable
 	{
 		#region Constants, Fields and Properties
 
@@ -64,7 +64,7 @@
 
 		~NetworkConfigurationController()
 		{
-			if (_networkWatcher != null) { _networkWatcher.Dispose(); }
+			Dispose();
 		}
 
 		#endregion
@@ -79,6 +79,12 @@
 				.OrderBy(p => Convert.ToUInt32(p.Properties["Index"].Value))
 				.ToList();
 			return networkAdaptersList.Select(networkAdapter => networkAdapter["Caption"].ToString()).ToList();
+		}
+
+		public void Dispose()
+		{
+			if (_networkWatcher != null) { _networkWatcher.Dispose(); }
+			_nodNetworkHelperData = null;
 		}
 
 		public void RemoveNetworkConfiguration(string configurationName)

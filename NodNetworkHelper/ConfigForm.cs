@@ -248,15 +248,32 @@
 
 			if (!string.IsNullOrEmpty(txtWifiAssociated.Text) && _networkConfigurationController.NetworkConfigurationsList != null)
 			{
-				if (_networkConfigurationController.NetworkConfigurationsList.Exists(x => x.WifiNameToWatch == txtWifiAssociated.Text))
+				bool alreadyExistConfigurationWatchingThisWifi;
+
+				if (_currentNetworkConfigurationBackup != null && _currentNetworkConfigurationBackup.ConfigurationName != txtConfigAlias.Text)
 				{
-					MessageBox.Show(NodNetworkHelperResources.msgAlreadyExistsConfigurationAssociatedWithThisWifi, NetworkConfigurationController.APPLICATION_NAME,
-						MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+					alreadyExistConfigurationWatchingThisWifi = CheckForDuplicatedNetworkToWatchConfiguration(_currentNetworkConfigurationBackup.ConfigurationName);
+				}
+				else
+				{
+					alreadyExistConfigurationWatchingThisWifi = CheckForDuplicatedNetworkToWatchConfiguration(txtConfigAlias.Text);
+				}
+
+				if (alreadyExistConfigurationWatchingThisWifi)
+				{
+					MessageBox.Show(NodNetworkHelperResources.msgAlreadyExistsConfigurationAssociatedWithThisWifi,
+						NetworkConfigurationController.APPLICATION_NAME, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 					return false;
 				}
 			}
 
 			return true;
+		}
+
+		private bool CheckForDuplicatedNetworkToWatchConfiguration(string configurationName)
+		{
+			return _networkConfigurationController.NetworkConfigurationsList.Exists(x =>
+				x.WifiNameToWatch == txtWifiAssociated.Text && x.ConfigurationName != configurationName);
 		}
 
 		private bool CheckForDuplicatedConfigurationName(string configurationName)

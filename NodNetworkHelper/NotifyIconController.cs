@@ -38,6 +38,7 @@
 
 		private void NotifyContextMenuCloseItemOnClick(object sender, System.EventArgs e)
 		{
+			_networkConfigurationController.Dispose();
 			Application.Exit();
 		}
 
