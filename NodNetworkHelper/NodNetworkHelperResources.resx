@@ -148,38 +148,20 @@
   <data name="Hand_Add24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\hand_add24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hand_Add32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\hand_add32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Hand_Alert24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\hand_alert24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hand_Alert32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\hand_alert32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hand_Del24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\hand_del24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hand_Del32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\hand_del32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Hand_Error24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\hand_error24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hand_Error32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\hand_error32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hand_Refresh24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\hand_refresh24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hand_Refresh32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\hand_refresh32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Hand_Save24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\hand_save24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hand_Save32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\hand_save32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="msgConfigurationNameAlreadyExist" xml:space="preserve">
     <value>There is already a Configuration with this alias, please select a diferent one.</value>

@@ -17,7 +17,7 @@
 
 			var networkConfigurationController = new NetworkConfigurationController();
 			NotifyIconController notifyIconController = new NotifyIconController(new ConfigForm(networkConfigurationController), networkConfigurationController);
-			
+
 			Application.Run();
 		}
 	}

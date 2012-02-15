@@ -53,13 +53,23 @@
 
 		public void NetworkConnectivityChanged(Guid networkId, NLM_CONNECTIVITY newConnectivity)
 		{
-			// Event is only important in this case when the Name of the Network has changed and it is connected to a new Network
+			// Event is only important in this case when the Network has changed and it is connected.
+			if (newConnectivity == NLM_CONNECTIVITY.NLM_CONNECTIVITY_DISCONNECTED) { return; }
+			if (newConnectivity == NLM_CONNECTIVITY.NLM_CONNECTIVITY_IPV4_NOTRAFFIC) { return; }
+
 			if (((int)newConnectivity & (int)NLM_CONNECTIVITY.NLM_CONNECTIVITY_IPV4_INTERNET) == 0) { return; }
 
-			var newNetworkName = _networkListManager.GetNetwork(networkId).GetName();
-			if (_networkChangedCall != null && !string.IsNullOrEmpty(newNetworkName))
+			try
 			{
-				_networkChangedCall(newNetworkName);
+				var newNetworkName = _networkListManager.GetNetwork(networkId).GetName();
+				if (_networkChangedCall != null && !string.IsNullOrEmpty(newNetworkName))
+				{
+					_networkChangedCall(newNetworkName);
+				}
+			}
+			catch (Exception)
+			{
+				return;
 			}
 		}
 

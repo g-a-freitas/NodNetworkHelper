@@ -94,23 +94,9 @@ namespace NodNetworkHelper {
             }
         }
         
-        internal static System.Drawing.Bitmap Hand_Add32 {
-            get {
-                object obj = ResourceManager.GetObject("Hand_Add32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
         internal static System.Drawing.Bitmap Hand_Alert24 {
             get {
                 object obj = ResourceManager.GetObject("Hand_Alert24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Hand_Alert32 {
-            get {
-                object obj = ResourceManager.GetObject("Hand_Alert32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -122,23 +108,9 @@ namespace NodNetworkHelper {
             }
         }
         
-        internal static System.Drawing.Bitmap Hand_Del32 {
-            get {
-                object obj = ResourceManager.GetObject("Hand_Del32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
         internal static System.Drawing.Bitmap Hand_Error24 {
             get {
                 object obj = ResourceManager.GetObject("Hand_Error24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Hand_Error32 {
-            get {
-                object obj = ResourceManager.GetObject("Hand_Error32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -150,23 +122,9 @@ namespace NodNetworkHelper {
             }
         }
         
-        internal static System.Drawing.Bitmap Hand_Refresh32 {
-            get {
-                object obj = ResourceManager.GetObject("Hand_Refresh32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
         internal static System.Drawing.Bitmap Hand_Save24 {
             get {
                 object obj = ResourceManager.GetObject("Hand_Save24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Hand_Save32 {
-            get {
-                object obj = ResourceManager.GetObject("Hand_Save32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

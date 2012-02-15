@@ -92,7 +92,8 @@
 			_notifyContextMenu = new ContextMenuStrip
 			{
 				ShowImageMargin = false,
-				BackColor = Color.White
+				BackColor = Color.White,
+				Font = new Font("Comic Sans MS", 9)
 			};
 			_notifyContextMenu.Items.Clear();
 
