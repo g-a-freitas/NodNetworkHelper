@@ -1,0 +1,23 @@
+# Visual Studio
+[Dd]ebug/
+[Rr]elease/
+*.sln.cache
+*.suo
+*.csproj.user
+TestResults
+testimpactdata.sdf
+*/logfile*
+*/ClientBin
+ClientBin
+*/Bin
+*/bin
+*/App_Data
+Settings.StyleCop
+
+# Resharper
+*[Rr]e[Ss]harper.user
+_ReSharper.*/
+*resharper.user
+
+# merged generated files
+*.orig
