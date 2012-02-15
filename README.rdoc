@@ -1,0 +1,21 @@
+= NodNetworkHelper
+
+This is a personal project made to help myself manage all the different network connections my computer uses every day, at home (cable and wifi), school and work (at least three different  wifi's networks and sometimes cable too). Yes, some of those places don't have DHCP (or they have, but when you connect through it, you'll have local connectivity but no internet access) so I had to change the IP manually all the time.
+Some friends also happen to have the same problem. We've found a lot of programs that did the same thing, but they usually were not simple to work with, sometimes they have to many options we don't use and, specially, didn't have a mode where a specific configuration would be enabled when connected to a specific wifi network.
+
+That being said, also keep in mind this:
+
+* The project was also made as a study case, to learn how to interact with the network configurations on Windows;
+* It was made in a hurry, so if you find any bug (or some way to improve the code), please, let me know so I can fix it ASAP;
+* It was only tested with Windows 7, should work on Vista too, not sure about XP.
+* Feel free to contribute;
+
+== How it works:
+
+The application will start with just an icon in the notification area in the task bar (near the clock).
+From there you can right-click to select some options:
+
+* You can open the configuration window to start inserting your configuration profiles;
+* If you already have a configuration profile, you can select it to change the network configurations with one click;
+* You can enable or disable the WiFi Watcher mode. In this mode every time you change your current Wifi network, the application will search for a configuration profile associated with the new network and automatically set those configurations.
+* You can close the application.
